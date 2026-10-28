@@ -1,0 +1,13 @@
+{
+  "total_delivered_items": 108,
+  "ontime_count": 95,
+  "late_count": 12,
+  "ontime_mean_review": 4.589,
+  "late_mean_review": 1.833,
+  "score_degradation": 2.756,
+  "mann_whitney_u": 1084.5,
+  "p_value": 7.104225908295337e-10,
+  "cliffs_delta": 0.9026,
+  "cohens_d": 3.0339,
+  "null_hypothesis_rejected": true
+}

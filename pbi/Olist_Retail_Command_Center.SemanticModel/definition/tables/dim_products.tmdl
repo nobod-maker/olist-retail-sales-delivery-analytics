@@ -1,0 +1,39 @@
+table dim_products
+	lineageTag: 10000000-0000-0000-0000-000000000003
+
+	column product_key
+		dataType: int64
+		isKey
+		formatString: 0
+		sourceColumn: product_key
+
+	column product_id
+		dataType: string
+		sourceColumn: product_id
+
+	column category_name_en
+		dataType: string
+		sourceColumn: category_name_en
+
+	column product_weight_g
+		dataType: int64
+		formatString: 0
+		sourceColumn: product_weight_g
+
+	column product_volume_cm3
+		dataType: int64
+		formatString: 0
+		sourceColumn: product_volume_cm3
+
+	column weight_tier
+		dataType: string
+		sourceColumn: weight_tier
+
+	partition dim_products = m
+		mode: import
+		source = 
+			let
+				Source = Csv.Document(File.Contents("data/olist_products_dataset.csv"),[Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+			in
+				#"Promoted Headers"

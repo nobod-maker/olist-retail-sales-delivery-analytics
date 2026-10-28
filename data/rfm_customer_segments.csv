@@ -1,0 +1,97 @@
+customer_unique_id,last_purchase_date,frequency,monetary_spend,total_gmv,customer_state,customer_region,recency_days,r_score,m_score,f_score,rfm_score_str,rfm_segment
+0c014c9397714db2b964e9e8a5367eaa,2018-05-25,1,121.56,142.58,SP,Southeast,94,5,3,1,513,Potential Loyalists
+0ca1017cf43c4feaafb42a4278f81dcc,2017-10-27,1,248.69,280.82,RJ,Southeast,304,3,5,1,315,Promising / Needs Attention
+10c13c702c5142e1bc24c30cadbc51fe,2018-01-01,1,44.24,80.29,SP,Southeast,238,4,1,1,411,Recent New Buyers
+13e9781ab29b4a078898968a8c264974,2018-04-17,1,266.33,346.89,SP,Southeast,132,4,5,1,415,Potential Loyalists
+1538e19127cb4fc597da7cf38f3de954,2017-07-19,1,244.60000000000002,297.59999999999997,SP,Southeast,404,3,5,1,315,Promising / Needs Attention
+172dd8a00e694513bf948564ecf36c69,2017-12-09,1,82.58,119.87,RS,South,261,3,2,1,312,Promising / Needs Attention
+187898f20667497681ac4de527af5d0d,2018-08-26,1,154.27,205.18,RJ,Southeast,1,5,4,1,514,Potential Loyalists
+19e709c39385460494bc73da560e92ca,2018-02-07,1,133.14,169.52,ES,Southeast,201,4,4,1,414,Potential Loyalists
+1abdc1136b614c6280b4886b7c71577d,2018-07-05,1,85.15,125.25,SP,Southeast,53,5,2,1,512,Potential Loyalists
+1f0b8c7de01f444a9aadcaba519980bd,2017-02-26,1,85.16,106.62,SP,Southeast,547,2,2,1,212,Lost / Inactive
+1f4e0ad20f8d43e48e69bda170cbed5e,2016-10-16,1,75.1,96.45,SP,Southeast,680,1,1,1,111,Lost / Inactive
+203788e6bed448f88c6d492c010995e9,2017-06-12,1,127.03,161.25,SC,South,441,3,3,1,313,Promising / Needs Attention
+2102d70b969142aaa087fe9f82234aeb,2017-01-22,1,99.08,139.14,MG,Southeast,582,1,2,1,112,Lost / Inactive
+2447a2c0d45e470497c03ca5713633c1,2018-02-18,1,257.4,300.11,SP,Southeast,190,4,5,1,415,Potential Loyalists
+2476e45094e74231a0855f7af6a58565,2017-01-14,1,132.54,160.31,SP,Southeast,590,1,4,1,114,Hibernating High Spenders
+27561c6e5be442d1b8fabb08a33ecc77,2016-10-23,1,99.72,120.14,SP,Southeast,673,1,2,1,112,Lost / Inactive
+2891bc7c5a414d74a22cf75450ca635c,2018-08-04,1,282.43,312.91,ES,Southeast,23,5,5,1,515,Potential Loyalists
+2bb1cb50720042f987c83df6776074e0,2018-01-07,1,40.71,66.86,SP,Southeast,232,4,1,1,411,Recent New Buyers
+2c6201bf01294c418d999e107710c0d5,2018-01-04,1,122.51,141.99,SP,Southeast,235,4,3,1,413,Potential Loyalists
+350b8ebf2b3246a0b035c5770593d7ad,2018-06-11,1,113.63,143.96,ES,Southeast,77,5,3,1,513,Potential Loyalists
+368c53a6145d4ff2b9c5d42ac4f54bd7,2017-01-10,1,247.24,299.23,SP,Southeast,594,1,5,1,115,Hibernating High Spenders
+3802ddf47d5143ebb7b7fc1c79234b30,2018-01-08,1,97.19,119.02,SP,Southeast,231,4,2,1,412,Potential Loyalists
+39eba735f6714e15b95d79f6c4882c39,2018-05-19,1,78.78,108.88,SP,Southeast,100,5,2,1,512,Potential Loyalists
+3be5daccab31462aab5316cef7776601,2017-03-23,1,111.87,156.52,RJ,Southeast,522,2,3,1,213,Hibernating High Spenders
+3e732321016142279760ca5bb862ccf9,2017-09-10,1,26.81,63.43,PB,Northeast,351,3,1,1,311,Promising / Needs Attention
+45dde04be93948a5b21db3be467a9b83,2017-05-19,1,94.32,129.43,RS,South,465,2,2,1,212,Lost / Inactive
+46a5487bb01e436ab3d3e11b009597b6,2017-01-03,1,106.26,136.17,ES,Southeast,601,1,3,1,113,Hibernating High Spenders
+4a77c6690a504069b867d4e0df35e78a,2016-10-31,1,272.41,318.03,MG,Southeast,665,1,5,1,115,Hibernating High Spenders
+4ae77a54d89d4d35b01717e824ccf894,2018-07-20,1,107.49,148.21,MA,Northeast,38,5,3,1,513,Potential Loyalists
+4c218752024b4316a8173c0cf199cea1,2017-08-07,1,130.49,174.33,SP,Southeast,385,3,3,1,313,Promising / Needs Attention
+4ecbc9718775433399563df11cb4801e,2016-10-31,1,128.45,163.19,SC,South,665,1,3,1,113,Hibernating High Spenders
+544f279b255e41fd8abd1143edbae72c,2018-07-24,1,156.73,200.67,RS,South,34,5,4,1,514,Potential Loyalists
+587362d2fb4344eb8e30ca0f6edd8766,2018-08-05,1,140.54,181.55,CE,Northeast,22,5,4,1,514,Potential Loyalists
+5a57e2dbdf454047941a54c0dd0059db,2017-10-11,1,107.27,130.57,SP,Southeast,320,3,3,1,313,Promising / Needs Attention
+5b42ab55dcd84faaa119066ce2dbd8e6,2018-06-03,1,163.44,194.56,SP,Southeast,85,5,4,1,514,Potential Loyalists
+5d1ef60f1bef475c83bd360cb9787227,2017-12-29,1,61.9,97.86,MG,Southeast,241,4,1,1,411,Recent New Buyers
+5df01fc6fea04897a78075025781a888,2017-06-03,1,101.29,149.55,RJ,Southeast,450,2,3,1,213,Hibernating High Spenders
+600e667c1112449f82adb5750e887797,2016-12-26,1,150.49,173.76,SP,Southeast,609,1,4,1,114,Hibernating High Spenders
+6146e3d293e84d2bbb2d94026985c0bd,2018-07-05,1,80.45,106.45,SP,Southeast,53,5,2,1,512,Potential Loyalists
+61982d2639134600a3e51ccd88e0c140,2017-01-08,1,52.62,92.71,RJ,Southeast,596,1,1,1,111,Lost / Inactive
+6378a8eff8e749f5b47f2ccea10aaa29,2017-09-03,1,14.94,49.12,PR,South,358,3,1,1,311,Promising / Needs Attention
+646fac9eb6c249ec8f91533667a45cd3,2017-01-01,1,91.35,136.24,SP,Southeast,603,1,2,1,112,Lost / Inactive
+6af38932235045dba0c941d67cb8a496,2018-07-01,1,101.24,129.11,MG,Southeast,57,5,3,1,513,Potential Loyalists
+6d1b8120c60d4e68a7a7bfc54d32ce65,2018-02-24,1,159.32,180.38,SP,Southeast,184,4,4,1,414,Potential Loyalists
+6eb816eaff4a4aadaa246d06cba37bea,2017-01-10,1,66.99,99.58,RJ,Southeast,594,1,1,1,111,Lost / Inactive
+6ed821000d5d4ef8b7b8f5b4becb4712,2018-07-30,1,261.61,326.56,RJ,Southeast,28,5,5,1,515,Potential Loyalists
+7becafaabfb64c7c80dba607761c5500,2016-11-19,1,140.51,186.25,SP,Southeast,646,1,4,1,114,Hibernating High Spenders
+7bffb1faf2704f74bd39c72eb3afdbc6,2017-12-13,1,102.97,122.79,SP,Southeast,257,4,3,1,413,Potential Loyalists
+7e15571326f942aa9f615525813a3893,2016-12-20,1,188.9,208.26,SP,Southeast,615,1,5,1,115,Hibernating High Spenders
+853b91b440f446dfa8e349873848f28c,2018-01-27,1,219.23000000000002,291.34,MG,Southeast,212,4,5,1,415,Potential Loyalists
+8854991fe3b44ac0ac8ac0d5b198c30a,2017-01-27,1,31.22,64.19,SP,Southeast,577,2,1,1,211,Lost / Inactive
+88feb42f74844a498a2e3c8f9bf6f06e,2017-03-25,1,48.27,84.4,RS,South,520,2,1,1,211,Lost / Inactive
+8c91210c25034bfab6f64f11778bf122,2017-06-04,1,205.69,234.78,PR,South,449,2,5,1,215,Hibernating High Spenders
+8e8afd45ada2428c98b37648d1067854,2018-06-09,1,122.25,179.22,RS,South,79,5,3,1,513,Potential Loyalists
+92610a70cf9e4c6aa9901ff00a03322e,2017-05-14,1,139.02,171.11,SP,Southeast,470,2,4,1,214,Hibernating High Spenders
+9280a04d46034d77855aeacb72629976,2016-12-17,1,63.97,89.11,SP,Southeast,618,1,1,1,111,Lost / Inactive
+9496633c844640f68e42063138f3b5ab,2016-11-02,1,160.76,192.36,SP,Southeast,663,1,4,1,114,Hibernating High Spenders
+94d5432b47bd4ac5b05d080d6688f1d7,2017-08-01,1,221.71,250.8,RS,South,391,3,5,1,315,Promising / Needs Attention
+9597b045774249d8b1d27a71e2de6095,2017-03-30,1,194.79,258.23,MG,Southeast,515,2,5,1,215,Hibernating High Spenders
+9a286442a4164071beff93530570e391,2018-05-18,1,109.62,140.85,CE,Northeast,101,5,3,1,513,Potential Loyalists
+9a79499f98424b5ebd575a5bf381f90f,2018-04-01,1,180.04,207.96,RJ,Southeast,148,4,4,1,414,Potential Loyalists
+9ba42e6bb5f1424d8330bf4d404de276,2017-10-15,2,581.37,658.36,SP,Southeast,316,3,5,3,335,Loyal Customers
+9e495f31c9e64d7caceffdf3a2f9f2e2,2018-06-18,1,119.05,143.36,SP,Southeast,70,5,3,1,513,Potential Loyalists
+a3a3777c32a9491bbc941851a6ecfbc7,2018-03-01,1,149.43,178.69,CE,Northeast,179,4,4,1,414,Potential Loyalists
+a6d3407b887c4130aacc99c7500f7589,2017-12-17,1,118.17,157.03,RJ,Southeast,253,4,3,1,413,Potential Loyalists
+ab02a110e26f44a0ad0e4551fcdbb8a0,2018-06-22,1,79.51,124.83,RJ,Southeast,66,5,2,1,512,Potential Loyalists
+ac97db633c4b4cbb9f2fa5f457353d32,2017-10-19,1,180.24,206.95,SP,Southeast,312,3,4,1,314,Promising / Needs Attention
+b06b1ee70f214766ad8ed5a357376f7d,2017-05-26,1,97.8,117.48,SP,Southeast,458,2,2,1,212,Lost / Inactive
+b17c5c88a1ab480a97a81babd1bb6895,2017-03-24,1,78.21,123.11,SP,Southeast,521,2,2,1,212,Lost / Inactive
+b3677539f4504432aec4c6e852d85321,2018-01-27,1,66.49,91.14,SP,Southeast,212,4,1,1,411,Recent New Buyers
+b399d70f8712432f8c407f65426adfc1,2017-07-18,1,260.65999999999997,305.87,SP,Southeast,405,3,5,1,315,Promising / Needs Attention
+b4d5690b5a124d908e57a76ad0cc7fd9,2017-01-21,1,76.64,118.01,SP,Southeast,583,1,1,1,111,Lost / Inactive
+b92355452dcb49199ea08092a9b14efc,2017-01-25,1,73.97,109.44,SP,Southeast,579,2,1,1,211,Lost / Inactive
+c142cf66b4d14991bd13d5c4b8ac6e15,2017-11-09,1,170.49,199.46,SP,Southeast,291,3,4,1,314,Promising / Needs Attention
+cbe4143fe5c64f038131ff2e01857c8f,2017-05-30,1,127.3,177.26,SE,Northeast,454,2,3,1,213,Hibernating High Spenders
+cce9d9a3c2ee4866af10df55814eaf7b,2017-07-01,1,156.06,183.25,SP,Southeast,422,3,4,1,314,Promising / Needs Attention
+cf9890b3182a43a6b442d414adf9fa6a,2017-06-02,2,282.45,336.7,SP,Southeast,451,2,5,3,235,At Risk
+d0b69f67f322489c904320620ee756e4,2018-08-17,1,71.54,98.94,RO,North,10,5,1,1,511,Recent New Buyers
+d1249181ad214c6087b8d1ca464ad11d,2017-09-12,1,76.9,97.74,SP,Southeast,349,3,2,1,312,Promising / Needs Attention
+d79f0139d0914a3ab18f6824c84c0499,2016-11-17,1,116.48,153.16,SP,Southeast,648,1,3,1,113,Hibernating High Spenders
+d90b1a4b0bfc4cf1af8fa4ef83d51afd,2017-05-26,1,211.35,232.52,SP,Southeast,458,2,5,1,215,Hibernating High Spenders
+ddb62ce0078e4542897509eff4fe9d13,2018-04-23,1,87.47,129.29,ES,Southeast,126,4,2,1,412,Potential Loyalists
+deaf223f1e584a409aff8a697806e2c9,2018-01-16,1,88.11,126.78,RJ,Southeast,223,4,2,1,412,Potential Loyalists
+e4561bbb0df14eafa6b4aa9426d807b0,2018-04-29,1,85.2,123.17,RJ,Southeast,120,4,2,1,412,Potential Loyalists
+e5ee4ec6d5f147ae85d8fc05f6e27329,2016-10-25,1,275.62,298.83,SP,Southeast,671,1,5,1,115,Hibernating High Spenders
+e87761c36f4c4e7083b9e4993e166a9e,2018-06-30,1,63.72,101.61,PR,South,58,5,1,1,511,Recent New Buyers
+e88a2f7aeb844ca0915420bbc7cc8d1c,2017-02-02,1,168.16,207.09,PR,South,571,2,4,1,214,Hibernating High Spenders
+eae836ca39e84b7385bac2119682a572,2017-07-03,1,98.6,124.75,SP,Southeast,420,3,2,1,312,Promising / Needs Attention
+ebbd72d1c9794462b66009ec3eafc1ba,2017-04-07,1,100.89,129.04,CE,Northeast,507,2,2,1,212,Lost / Inactive
+ed4305ba1d10472c9a9df0d5d62c751f,2017-06-28,2,254.29999999999998,316.53999999999996,RJ,Southeast,425,3,5,3,335,Loyal Customers
+ef1d5c1fd6844a6380d58a3d0e9e9dc6,2017-07-04,1,72.66,100.09,SP,Southeast,419,3,1,1,311,Promising / Needs Attention
+f0c78a8b7ffc4ccaaf5252979647e119,2017-06-12,1,65.53,95.07,MA,Northeast,441,3,1,1,311,Promising / Needs Attention
+f11597b9b8dc45b8a1369dab87ff2182,2017-12-31,1,158.97,188.28,PR,South,239,4,4,1,414,Potential Loyalists
+f4092fa3ad2a49a5a4daf4ce3ea7f6e5,2018-06-24,1,50.14,106.28,SC,South,64,5,1,1,511,Recent New Buyers
+f4726743651c4e6192f7ed98cc45b778,2017-05-05,1,161.26,183.19,SP,Southeast,479,2,4,1,214,Hibernating High Spenders
+fe86b536c5cb4bf99eb150fc3dccb9b1,2017-05-21,1,44.77,77.71,RR,North,463,2,1,1,211,Lost / Inactive

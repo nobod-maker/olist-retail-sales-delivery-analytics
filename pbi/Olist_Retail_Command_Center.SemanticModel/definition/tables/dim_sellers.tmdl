@@ -1,0 +1,33 @@
+table dim_sellers
+	lineageTag: 10000000-0000-0000-0000-000000000004
+
+	column seller_key
+		dataType: int64
+		isKey
+		formatString: 0
+		sourceColumn: seller_key
+
+	column seller_id
+		dataType: string
+		sourceColumn: seller_id
+
+	column seller_city
+		dataType: string
+		sourceColumn: seller_city
+
+	column seller_state
+		dataType: string
+		sourceColumn: seller_state
+
+	column seller_region
+		dataType: string
+		sourceColumn: seller_region
+
+	partition dim_sellers = m
+		mode: import
+		source = 
+			let
+				Source = Csv.Document(File.Contents("data/olist_sellers_dataset.csv"),[Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+			in
+				#"Promoted Headers"

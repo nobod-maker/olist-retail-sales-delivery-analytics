@@ -1,0 +1,125 @@
+// ============================================================================
+// Olist Brazilian E-Commerce Analytics Platform
+// Enterprise DAX Measures Repository
+// ============================================================================
+
+// --- 1. CORE REVENUE & VOLUME MEASURES ---
+[Total Revenue] = 
+SUM(fact_order_items[price])
+
+[Total Freight] = 
+SUM(fact_order_items[freight_value])
+
+[Total GMV] = 
+[Total Revenue] + [Total Freight]
+
+[Total Orders] = 
+DISTINCTCOUNT(fact_order_items[order_id])
+
+[Total Items Sold] = 
+COUNT(fact_order_items[order_item_key])
+
+[Average Order Value] = 
+DIVIDE([Total Revenue], [Total Orders], 0.0)
+
+[Average Items Per Order] = 
+DIVIDE([Total Items Sold], [Total Orders], 0.0)
+
+// --- 2. TIME INTELLIGENCE & MOM GROWTH ---
+[Revenue Prior Month] = 
+CALCULATE(
+    [Total Revenue],
+    DATEADD(dim_date[full_date], -1, MONTH)
+)
+
+[Revenue MoM Growth %] = 
+VAR CurrentRevenue = [Total Revenue]
+VAR PriorRevenue = [Revenue Prior Month]
+RETURN
+DIVIDE(CurrentRevenue - PriorRevenue, PriorRevenue, 0.0)
+
+[Orders Prior Month] = 
+CALCULATE(
+    [Total Orders],
+    DATEADD(dim_date[full_date], -1, MONTH)
+)
+
+[Orders MoM Growth %] = 
+VAR CurrentOrders = [Total Orders]
+VAR PriorOrders = [Orders Prior Month]
+RETURN
+DIVIDE(CurrentOrders - PriorOrders, PriorOrders, 0.0)
+
+// --- 3. LOGISTICS & SLA DELIVERY PERFORMANCE ---
+[Total Delivered Orders] = 
+CALCULATE(
+    [Total Orders],
+    fact_order_items[order_status] = "delivered"
+)
+
+[Late Orders] = 
+CALCULATE(
+    [Total Orders],
+    fact_order_items[is_late] = 1,
+    fact_order_items[order_status] = "delivered"
+)
+
+[On-Time Orders] = 
+CALCULATE(
+    [Total Orders],
+    fact_order_items[is_late] = 0,
+    fact_order_items[order_status] = "delivered"
+)
+
+[Late Delivery %] = 
+DIVIDE([Late Orders], [Total Delivered Orders], 0.0)
+
+[On-Time Delivery %] = 
+DIVIDE([On-Time Orders], [Total Delivered Orders], 0.0)
+
+[Avg Actual Delivery Days] = 
+AVERAGE(fact_order_items[actual_delivery_days])
+
+[Avg Estimated Delivery Days] = 
+AVERAGE(fact_order_items[estimated_delivery_days])
+
+[Avg Delivery Delay Days] = 
+AVERAGE(fact_order_items[delivery_delay_days])
+
+// --- 4. CUSTOMER SATISFACTION (CSAT) & REVIEWS ---
+[Avg Review Score] = 
+AVERAGE(fact_order_items[review_score])
+
+[5-Star Reviews Count] = 
+CALCULATE(
+    COUNT(fact_order_items[order_item_key]),
+    fact_order_items[review_score] = 5
+)
+
+[1-Star Reviews Count] = 
+CALCULATE(
+    COUNT(fact_order_items[order_item_key]),
+    fact_order_items[review_score] = 1
+)
+
+[5-Star Review %] = 
+DIVIDE([5-Star Reviews Count], COUNT(fact_order_items[review_score]), 0.0)
+
+[1-Star Review %] = 
+DIVIDE([1-Star Reviews Count], COUNT(fact_order_items[review_score]), 0.0)
+
+// --- 5. CUSTOMER RETENTION & COHORTS ---
+[Total Unique Customers] = 
+DISTINCTCOUNT(dim_customers[customer_unique_id])
+
+[Repeat Customers] = 
+CALCULATE(
+    DISTINCTCOUNT(dim_customers[customer_unique_id]),
+    FILTER(
+        VALUES(dim_customers[customer_unique_id]),
+        CALCULATE([Total Orders]) >= 2
+    )
+)
+
+[Repeat Customer Rate %] = 
+DIVIDE([Repeat Customers], [Total Unique Customers], 0.0)

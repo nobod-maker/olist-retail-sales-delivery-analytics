@@ -1,0 +1,25 @@
+relationship Rel_Fact_OrderDate
+	fromColumn: fact_order_items.order_date_key
+	toColumn: dim_date.date_key
+
+relationship Rel_Fact_DeliveryDate
+	isActive: false
+	fromColumn: fact_order_items.delivery_date_key
+	toColumn: dim_date.date_key
+
+relationship Rel_Fact_EstimatedDate
+	isActive: false
+	fromColumn: fact_order_items.estimated_date_key
+	toColumn: dim_date.date_key
+
+relationship Rel_Fact_Customer
+	fromColumn: fact_order_items.customer_key
+	toColumn: dim_customers.customer_key
+
+relationship Rel_Fact_Product
+	fromColumn: fact_order_items.product_key
+	toColumn: dim_products.product_key
+
+relationship Rel_Fact_Seller
+	fromColumn: fact_order_items.seller_key
+	toColumn: dim_sellers.seller_key

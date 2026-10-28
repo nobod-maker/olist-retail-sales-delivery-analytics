@@ -1,0 +1,133 @@
+table fact_order_items
+	lineageTag: 10000000-0000-0000-0000-000000000005
+
+	column order_item_key
+		dataType: int64
+		isKey
+		formatString: 0
+		sourceColumn: order_item_key
+
+	column order_id
+		dataType: string
+		sourceColumn: order_id
+
+	column order_item_id
+		dataType: int64
+		formatString: 0
+		sourceColumn: order_item_id
+
+	column order_status
+		dataType: string
+		sourceColumn: order_status
+
+	column order_date_key
+		dataType: int64
+		formatString: 0
+		sourceColumn: order_date_key
+
+	column delivery_date_key
+		dataType: int64
+		formatString: 0
+		sourceColumn: delivery_date_key
+
+	column estimated_date_key
+		dataType: int64
+		formatString: 0
+		sourceColumn: estimated_date_key
+
+	column customer_key
+		dataType: int64
+		formatString: 0
+		sourceColumn: customer_key
+
+	column product_key
+		dataType: int64
+		formatString: 0
+		sourceColumn: product_key
+
+	column seller_key
+		dataType: int64
+		formatString: 0
+		sourceColumn: seller_key
+
+	column price
+		dataType: double
+		formatString: "$#,##0.00"
+		sourceColumn: price
+
+	column freight_value
+		dataType: double
+		formatString: "$#,##0.00"
+		sourceColumn: freight_value
+
+	column total_item_value
+		dataType: double
+		formatString: "$#,##0.00"
+		sourceColumn: total_item_value
+
+	column delivery_delay_days
+		dataType: int64
+		formatString: 0
+		sourceColumn: delivery_delay_days
+
+	column actual_delivery_days
+		dataType: int64
+		formatString: 0
+		sourceColumn: actual_delivery_days
+
+	column estimated_delivery_days
+		dataType: int64
+		formatString: 0
+		sourceColumn: estimated_delivery_days
+
+	column is_late
+		dataType: int64
+		formatString: 0
+		sourceColumn: is_late
+
+	column review_score
+		dataType: int64
+		formatString: 0
+		sourceColumn: review_score
+
+	measure 'Total Revenue' = SUM(fact_order_items[price])
+		formatString: "$#,##0.00"
+
+	measure 'Total Freight' = SUM(fact_order_items[freight_value])
+		formatString: "$#,##0.00"
+
+	measure 'Total GMV' = [Total Revenue] + [Total Freight]
+		formatString: "$#,##0.00"
+
+	measure 'Total Orders' = DISTINCTCOUNT(fact_order_items[order_id])
+		formatString: "#,##0"
+
+	measure 'Average Order Value' = DIVIDE([Total Revenue], [Total Orders], 0.0)
+		formatString: "$#,##0.00"
+
+	measure 'Total Delivered Orders' = CALCULATE([Total Orders], fact_order_items[order_status] = "delivered")
+		formatString: "#,##0"
+
+	measure 'Late Orders' = CALCULATE([Total Orders], fact_order_items[is_late] = 1, fact_order_items[order_status] = "delivered")
+		formatString: "#,##0"
+
+	measure 'Late Delivery %' = DIVIDE([Late Orders], [Total Delivered Orders], 0.0)
+		formatString: "0.0%"
+
+	measure 'On-Time Delivery %' = 1.0 - [Late Delivery %]
+		formatString: "0.0%"
+
+	measure 'Avg Delivery Delay Days' = AVERAGE(fact_order_items[delivery_delay_days])
+		formatString: "0.0"
+
+	measure 'Avg Review Score' = AVERAGE(fact_order_items[review_score])
+		formatString: "0.00"
+
+	partition fact_order_items = m
+		mode: import
+		source = 
+			let
+				Source = Csv.Document(File.Contents("data/vw_order_master.csv"),[Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+			in
+				#"Promoted Headers"

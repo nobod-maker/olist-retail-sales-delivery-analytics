@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "artifacts": [
+    {
+      "report": {
+        "path": "Olist_Retail_Command_Center.Report"
+      }
+    }
+  ],
+  "settings": {}
+}
